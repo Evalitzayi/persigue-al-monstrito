@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Persigue al SANTI</title>
+    <title>Persigue al Monstrito</title>
     <style>
         body {
             text-align: center;
@@ -25,8 +25,8 @@
     </style>
 </head>
 <body>
-    <h1>¡Intenta atrapar al SANTI!</h1>
-    <p>Mueve el mouse sobre el área de juego y trata de hacer clic en el SANTI. Tienes 5 intentos.</p>
+    <h1>¡Intenta atrapar al Noe!</h1>
+    <p>Mueve el mouse sobre el área de juego y trata de hacer clic en el Monstrito. Tienes 5 intentos.</p>
     <div id="gameArea">
         <div id="dino"></div>
     </div>
@@ -49,14 +49,14 @@
 
         dino.addEventListener("mouseover", moveDino);
         dino.addEventListener("click", () => {
-            alert("¡Ganaste! Atrapaste al dinosaurio.");
+            alert("¡Ganaste! Atrapaste al Monstrito.");
             location.reload();
         });
 
         gameArea.addEventListener("click", () => {
             attempts--;
             if (attempts <= 0) {
-                alert("¡Perdedor! No atrapaste al SANTI.");
+                alert("¡Perdedor! No atrapaste al Noe.");
                 location.reload();
             }
         });
